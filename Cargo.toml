@@ -1,0 +1,17 @@
+[package]
+name = "web-images-cabi"
+version = "0.1.0"
+authors = ["colbyn <hello@colbyn.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["staticlib","cdylib"]
+
+[dependencies]
+libc = "^0.2"
+image = "^0.22"
+imageproc = "^0.19"
+colourado = "^0.2"
+
+[build-dependencies]
+cbindgen = "0.9.1"
